@@ -1,0 +1,185 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Reading design: project2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "project2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : project2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student2/jsma/Project2/VGAController.vhd" in Library work.
+ERROR:HDLParsers:3011 - "/home/student2/jsma/Project2/VGAController.vhd" Line 45. End Identifier project2 does not match declaration, VGAController.
+ERROR:HDLParsers:3010 - "/home/student2/jsma/Project2/VGAController.vhd" Line 47. Entity project2 does not exist.
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 62. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 62. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 91. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 91. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 94. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 97. Undefined symbol 'clockDivision'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 97. clockDivision: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 101. Undefined symbol 'clockPhase'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 101. clockPhase: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "/home/student2/jsma/Project2/VGAController.vhd" Line 91. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 112. Undefined symbol 'clockDivision'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 112. clockDivision: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 130. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 149. Undefined symbol 'HSYNC'.
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 149. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 149. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 149. Undefined symbol 'to_unsigned'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 149. to_unsigned: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 149. HSYNC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 151. Undefined symbol 'VSYNC'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 151. VSYNC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 169. Undefined symbol 'H'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 174. H: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 189. Undefined symbol 'V'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 192. V: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 200. Undefined symbol 'vidStatus'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 205. vidStatus: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "/home/student2/jsma/Project2/VGAController.vhd" Line 112. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. Undefined symbol 'clockPhase'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. clockPhase: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. Undefined symbol 'SW0'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. SW0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. Undefined symbol 'SW2'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. SW2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. Undefined symbol 'SW1'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. SW1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. Undefined symbol 'SW3'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 211. SW3: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 214. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 217. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 218. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 239. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 240. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 267. Undefined symbol 'horizBallDir'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 276. horizBallDir: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 303. Undefined symbol 'vertBallDir'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 308. vertBallDir: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 317. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 321. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 327. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 331. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 345. Undefined symbol 'vidStatus'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 345. vidStatus: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/jsma/Project2/VGAController.vhd" Line 347. = can not have such operands in this context.
+ERROR:HDLParsers:3313 - "/home/student2/jsma/Project2/VGAController.vhd" Line 348. Undefined symbol 'Rout'.  Should it be: out?
+ERROR:HDLParsers:3313 - "/home/student2/jsma/Project2/VGAController.vhd" Line 349. Undefined symbol 'Gout'.  Should it be: out?
+ERROR:HDLParsers:3313 - "/home/student2/jsma/Project2/VGAController.vhd" Line 350. Undefined symbol 'Bout'.  Should it be: out?
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 354. Rout: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 355. Gout: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 356. Bout: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "/home/student2/jsma/Project2/VGAController.vhd" Line 345. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 404. Undefined symbol 'DAC_CLK'.
+ERROR:HDLParsers:3312 - "/home/student2/jsma/Project2/VGAController.vhd" Line 404. Undefined symbol 'clockDivision'.
+ERROR:HDLParsers:1209 - "/home/student2/jsma/Project2/VGAController.vhd" Line 404. clockDivision: Undefined symbol (last report in this block)
+--> 
+
+
+Total memory usage is 615056 kilobytes
+
+Number of errors   :   63 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

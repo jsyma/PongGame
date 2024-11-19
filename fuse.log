@@ -1,0 +1,25 @@
+Running: /CMC/tools/xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/student2/jsma/Project2/VGAController_tb_isim_beh.exe -prj /home/student2/jsma/Project2/VGAController_tb_beh.prj work.VGAController_tb 
+ISim O.87xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/student2/jsma/Project2/VGAController.vhd" into library work
+Parsing VHDL file "/home/student2/jsma/Project2/VGAController_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 123276 KB
+Fuse CPU Usage: 950 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity VGAController [vgacontroller_default]
+Compiling architecture behavioral of entity vgacontroller_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Built simulation executable /home/student2/jsma/Project2/VGAController_tb_isim_beh.exe
+Fuse Memory Usage: 1223452 KB
+Fuse CPU Usage: 1080 ms
+GCC CPU Usage: 250 ms

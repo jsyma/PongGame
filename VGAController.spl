@@ -1,0 +1,14 @@
+[Inputs]
+clk_50
+lp_dir
+lp_move_en
+rp_dir
+rp_move_en
+[Outputs]
+DAC_clk
+h_sync
+v_sync
+=Rout[7:0]=
+=Gout[7:0]=
+=Bout[7:0]=
+[BiDir]

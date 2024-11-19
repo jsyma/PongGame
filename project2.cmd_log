@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/project2.xst" -ofn "/home/student2/jsma/Project2/project2.syr" 

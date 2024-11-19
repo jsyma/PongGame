@@ -1,0 +1,2 @@
+vhdl work "VGAController.vhd"
+vhdl work "VGAController_tb.vhd"

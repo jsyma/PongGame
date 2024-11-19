@@ -1,0 +1,730 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: VGAController.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGAController.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGAController"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : VGAController
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student2/jsma/Project2/VGAController.vhd" in Library work.
+Entity <vgacontroller> compiled.
+Entity <vgacontroller> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <VGAController> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <VGAController> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/student2/jsma/Project2/VGAController.vhd" line 230: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <h_count>, <v_count>, <ball_x>, <ball_y>, <p1_pos_x>, <p1_pos_y>, <p2_pos_x>, <p2_pos_y>
+Entity <VGAController> analyzed. Unit <VGAController> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <VGAController>.
+    Related source file is "/home/student2/jsma/Project2/VGAController.vhd".
+WARNING:Xst:653 - Signal <p2_pos_x> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001000100.
+WARNING:Xst:653 - Signal <p1_pos_x> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000110010.
+    Found 1-bit register for signal <h_sync>.
+    Found 1-bit register for signal <v_sync>.
+    Found 32-bit subtractor for signal <$sub0000> created at line 262.
+    Found 32-bit updown counter for signal <ball_x>.
+    Found 32-bit comparator greater for signal <ball_x$cmp_gt0000> created at line 210.
+    Found 32-bit comparator less for signal <ball_x$cmp_lt0000> created at line 210.
+    Found 1-bit register for signal <ball_x_dir>.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0000> created at line 183.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0001> created at line 183.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0002> created at line 182.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0003> created at line 188.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0004> created at line 193.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0005> created at line 193.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0006> created at line 182.
+    Found 32-bit comparator greatequal for signal <ball_x_dir$cmp_ge0007> created at line 182.
+    Found 32-bit comparator greater for signal <ball_x_dir$cmp_gt0000> created at line 190.
+    Found 32-bit comparator greater for signal <ball_x_dir$cmp_gt0001> created at line 190.
+    Found 32-bit comparator lessequal for signal <ball_x_dir$cmp_le0000> created at line 190.
+    Found 32-bit comparator lessequal for signal <ball_x_dir$cmp_le0001> created at line 190.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0000> created at line 183.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0001> created at line 183.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0002> created at line 182.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0003> created at line 188.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0004> created at line 188.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0005> created at line 193.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0006> created at line 193.
+    Found 32-bit comparator less for signal <ball_x_dir$cmp_lt0007> created at line 182.
+    Found 32-bit updown counter for signal <ball_y>.
+    Found 1-bit register for signal <ball_y_dir>.
+    Found 32-bit comparator greatequal for signal <ball_y_dir$cmp_ge0000> created at line 204.
+    Found 32-bit comparator lessequal for signal <ball_y_dir$cmp_le0000> created at line 203.
+    Found 1-bit register for signal <clk_25>.
+    Found 32-bit up counter for signal <clk_count>.
+    Found 1-bit register for signal <clk_phase>.
+    Found 32-bit comparator greatequal for signal <Gout$cmp_ge0000> created at line 262.
+    Found 32-bit comparator greatequal for signal <Gout$cmp_ge0001> created at line 262.
+    Found 32-bit comparator lessequal for signal <Gout$cmp_le0000> created at line 262.
+    Found 6-bit comparator less for signal <Gout$cmp_lt0000> created at line 262.
+    Found 32-bit up counter for signal <h_count>.
+    Found 32-bit comparator greatequal for signal <h_sync$cmp_ge0000> created at line 119.
+    Found 32-bit comparator less for signal <h_sync$cmp_lt0000> created at line 119.
+    Found 32-bit register for signal <p1_pos_y>.
+    Found 32-bit comparator greater for signal <p1_pos_y$cmp_gt0000> created at line 156.
+    Found 32-bit comparator less for signal <p1_pos_y$cmp_lt0000> created at line 150.
+    Found 32-bit 4-to-1 multiplexer for signal <p1_pos_y$mux0003>.
+    Found 32-bit addsub for signal <p1_pos_y$share0000>.
+    Found 32-bit register for signal <p2_pos_y>.
+    Found 32-bit comparator greater for signal <p2_pos_y$cmp_gt0000> created at line 173.
+    Found 32-bit comparator less for signal <p2_pos_y$cmp_lt0000> created at line 167.
+    Found 32-bit 4-to-1 multiplexer for signal <p2_pos_y$mux0003>.
+    Found 32-bit addsub for signal <p2_pos_y$share0000>.
+    Found 32-bit adder for signal <Rout$add0000> created at line 247.
+    Found 32-bit adder for signal <Rout$add0001> created at line 247.
+    Found 32-bit adder for signal <Rout$add0002> created at line 252.
+    Found 32-bit adder for signal <Rout$add0003> created at line 252.
+    Found 32-bit adder for signal <Rout$add0004> created at line 257.
+    Found 32-bit adder for signal <Rout$add0005> created at line 257.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0000> created at line 237.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0001> created at line 237.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0002> created at line 273.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0003> created at line 273.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0004> created at line 239.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0005> created at line 242.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0006> created at line 242.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0007> created at line 252.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0008> created at line 252.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0009> created at line 257.
+    Found 32-bit comparator greatequal for signal <Rout$cmp_ge0010> created at line 257.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0000> created at line 237.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0001> created at line 237.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0002> created at line 273.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0003> created at line 273.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0004> created at line 239.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0005> created at line 242.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0006> created at line 242.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0007> created at line 252.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0008> created at line 252.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0009> created at line 257.
+    Found 32-bit comparator less for signal <Rout$cmp_lt0010> created at line 257.
+    Found 32-bit up counter for signal <v_count>.
+    Found 32-bit comparator less for signal <v_count$cmp_lt0000> created at line 111.
+    Found 32-bit comparator less for signal <v_count$cmp_lt0001> created at line 106.
+    Found 32-bit comparator greatequal for signal <v_sync$cmp_ge0000> created at line 127.
+    Found 32-bit comparator less for signal <v_sync$cmp_lt0000> created at line 127.
+    Found 1-bit register for signal <video_on>.
+    Found 32-bit comparator less for signal <video_on$cmp_lt0000> created at line 135.
+    Found 32-bit comparator less for signal <video_on$cmp_lt0001> created at line 135.
+    Summary:
+	inferred   5 Counter(s).
+	inferred  71 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  62 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <VGAController> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 32-bit adder                                          : 6
+ 32-bit addsub                                         : 2
+ 32-bit subtractor                                     : 1
+# Counters                                             : 5
+ 32-bit up counter                                     : 3
+ 32-bit updown counter                                 : 2
+# Registers                                            : 9
+ 1-bit register                                        : 7
+ 32-bit register                                       : 2
+# Comparators                                          : 62
+ 32-bit comparator greatequal                          : 24
+ 32-bit comparator greater                             : 5
+ 32-bit comparator less                                : 28
+ 32-bit comparator lessequal                           : 4
+ 6-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 32-bit adder                                          : 6
+ 32-bit addsub                                         : 2
+ 6-bit subtractor                                      : 1
+# Counters                                             : 5
+ 32-bit up counter                                     : 3
+ 32-bit updown counter                                 : 2
+# Registers                                            : 71
+ Flip-Flops                                            : 71
+# Comparators                                          : 62
+ 32-bit comparator greatequal                          : 24
+ 32-bit comparator greater                             : 5
+ 32-bit comparator less                                : 28
+ 32-bit comparator lessequal                           : 4
+ 6-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <VGAController> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VGAController, actual ratio is 16.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 231
+ Flip-Flops                                            : 231
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : VGAController.ngr
+Top Level Output File Name         : VGAController
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 3107
+#      GND                         : 1
+#      INV                         : 121
+#      LUT1                        : 269
+#      LUT2                        : 694
+#      LUT2_L                      : 1
+#      LUT3                        : 18
+#      LUT3_L                      : 3
+#      LUT4                        : 329
+#      LUT4_L                      : 3
+#      MUXCY                       : 1317
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 348
+# FlipFlops/Latches                : 231
+#      FDE                         : 66
+#      FDR                         : 126
+#      FDRE                        : 32
+#      FDS                         : 6
+#      FDSE                        : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 4
+#      OBUF                        : 27
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      760  out of   4656    16%  
+ Number of Slice Flip Flops:            231  out of   9312     2%  
+ Number of 4 input LUTs:               1438  out of   9312    15%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    232    13%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_50                             | BUFGP                  | 34    |
+clk_251                            | BUFG                   | 67    |
+clk_phase1                         | BUFG                   | 130   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.314ns (Maximum Frequency: 96.951MHz)
+   Minimum input arrival time before clock: 6.823ns
+   Maximum output required time after clock: 13.542ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50'
+  Clock period: 4.528ns (frequency: 220.868MHz)
+  Total number of paths / destination ports: 1586 / 67
+-------------------------------------------------------------------------
+Delay:               4.528ns (Levels of Logic = 9)
+  Source:            clk_count_8 (FF)
+  Destination:       clk_count_0 (FF)
+  Source Clock:      clk_50 rising
+  Destination Clock: clk_50 rising
+
+  Data Path: clk_count_8 to clk_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  clk_count_8 (clk_count_8)
+     LUT4:I0->O            1   0.612   0.000  clk_count_cmp_eq0000_wg_lut<0> (clk_count_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  clk_count_cmp_eq0000_wg_cy<0> (clk_count_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  clk_count_cmp_eq0000_wg_cy<1> (clk_count_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  clk_count_cmp_eq0000_wg_cy<2> (clk_count_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  clk_count_cmp_eq0000_wg_cy<3> (clk_count_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  clk_count_cmp_eq0000_wg_cy<4> (clk_count_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  clk_count_cmp_eq0000_wg_cy<5> (clk_count_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  clk_count_cmp_eq0000_wg_cy<6> (clk_count_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.289   1.073  clk_count_cmp_eq0000_wg_cy<7> (clk_count_cmp_eq0000)
+     FDR:R                     0.795          clk_count_0
+    ----------------------------------------
+    Total                      4.528ns (2.923ns logic, 1.605ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_251'
+  Clock period: 6.975ns (frequency: 143.369MHz)
+  Total number of paths / destination ports: 5257 / 163
+-------------------------------------------------------------------------
+Delay:               6.975ns (Levels of Logic = 12)
+  Source:            h_count_4 (FF)
+  Destination:       v_count_0 (FF)
+  Source Clock:      clk_251 rising
+  Destination Clock: clk_251 rising
+
+  Data Path: h_count_4 to v_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.514   1.031  h_count_4 (h_count_4)
+     LUT1:I0->O            1   0.612   0.000  Mcompar_Rout_cmp_ge0000_cy<1>_9_rt (Mcompar_Rout_cmp_ge0000_cy<1>_9_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_Rout_cmp_ge0000_cy<1>_9 (Mcompar_Rout_cmp_ge0000_cy<1>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<2>_9 (Mcompar_Rout_cmp_ge0000_cy<2>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<3>_9 (Mcompar_Rout_cmp_ge0000_cy<3>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<4>_9 (Mcompar_Rout_cmp_ge0000_cy<4>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<5>_9 (Mcompar_Rout_cmp_ge0000_cy<5>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<6>_9 (Mcompar_Rout_cmp_ge0000_cy<6>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<7>_9 (Mcompar_Rout_cmp_ge0000_cy<7>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<8>_9 (Mcompar_Rout_cmp_ge0000_cy<8>10)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0000_cy<9>_9 (Mcompar_Rout_cmp_ge0000_cy<9>9)
+     MUXCY:CI->O          65   0.289   1.234  Mcompar_Rout_cmp_ge0000_cy<10>_7 (Mcompar_Rout_cmp_ge0000_cy<10>5)
+     LUT2:I0->O           32   0.612   1.073  v_count_and00001 (v_count_and0000)
+     FDRE:R                    0.795          v_count_0
+    ----------------------------------------
+    Total                      6.975ns (3.638ns logic, 3.338ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_phase1'
+  Clock period: 10.314ns (frequency: 96.951MHz)
+  Total number of paths / destination ports: 54536 / 196
+-------------------------------------------------------------------------
+Delay:               10.314ns (Levels of Logic = 34)
+  Source:            ball_y_4 (FF)
+  Destination:       ball_x_dir (FF)
+  Source Clock:      clk_phase1 rising
+  Destination Clock: clk_phase1 rising
+
+  Data Path: ball_y_4 to ball_x_dir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             10   0.514   0.902  ball_y_4 (ball_y_4)
+     LUT1:I0->O            1   0.612   0.000  Madd_Rout_add0001_cy<4>_rt (Madd_Rout_add0001_cy<4>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_Rout_add0001_cy<4> (Madd_Rout_add0001_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<5> (Madd_Rout_add0001_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<6> (Madd_Rout_add0001_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<7> (Madd_Rout_add0001_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<8> (Madd_Rout_add0001_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<9> (Madd_Rout_add0001_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<10> (Madd_Rout_add0001_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<11> (Madd_Rout_add0001_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<12> (Madd_Rout_add0001_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<13> (Madd_Rout_add0001_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<14> (Madd_Rout_add0001_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<15> (Madd_Rout_add0001_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<16> (Madd_Rout_add0001_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<17> (Madd_Rout_add0001_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<18> (Madd_Rout_add0001_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<19> (Madd_Rout_add0001_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<20> (Madd_Rout_add0001_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<21> (Madd_Rout_add0001_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<22> (Madd_Rout_add0001_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<23> (Madd_Rout_add0001_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<24> (Madd_Rout_add0001_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<25> (Madd_Rout_add0001_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<26> (Madd_Rout_add0001_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<27> (Madd_Rout_add0001_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<28> (Madd_Rout_add0001_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_Rout_add0001_cy<29> (Madd_Rout_add0001_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Madd_Rout_add0001_cy<30> (Madd_Rout_add0001_cy<30>)
+     XORCY:CI->O           7   0.699   0.671  Madd_Rout_add0001_xor<31> (Rout_add0001<31>)
+     LUT2:I1->O            1   0.612   0.000  Mcompar_ball_x_dir_cmp_ge0005_lut<31> (Mcompar_ball_x_dir_cmp_ge0005_lut<31>)
+     MUXCY:S->O            1   0.752   0.387  Mcompar_ball_x_dir_cmp_ge0005_cy<31> (ball_x_dir_cmp_ge0005)
+     LUT3:I2->O            1   0.612   0.360  ball_x_dir_not000126_SW1 (N13)
+     LUT4:I3->O            1   0.612   0.387  ball_x_dir_not000132 (ball_x_dir_not000132)
+     LUT4:I2->O            1   0.612   0.357  ball_x_dir_not0001389 (ball_x_dir_not0001)
+     FDE:CE                    0.483          ball_x_dir
+    ----------------------------------------
+    Total                     10.314ns (7.251ns logic, 3.064ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_phase1'
+  Total number of paths / destination ports: 1248 / 128
+-------------------------------------------------------------------------
+Offset:              6.823ns (Levels of Logic = 35)
+  Source:            p1_move_dir (PAD)
+  Destination:       p1_pos_y_31 (FF)
+  Destination Clock: clk_phase1 rising
+
+  Data Path: p1_move_dir to p1_pos_y_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            65   1.106   1.151  p1_move_dir_IBUF (p1_move_dir1)
+     LUT2:I1->O            1   0.612   0.000  Maddsub_p1_pos_y_share0000_lut<0> (Maddsub_p1_pos_y_share0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Maddsub_p1_pos_y_share0000_cy<0> (Maddsub_p1_pos_y_share0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<1> (Maddsub_p1_pos_y_share0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<2> (Maddsub_p1_pos_y_share0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<3> (Maddsub_p1_pos_y_share0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<4> (Maddsub_p1_pos_y_share0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<5> (Maddsub_p1_pos_y_share0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<6> (Maddsub_p1_pos_y_share0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<7> (Maddsub_p1_pos_y_share0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<8> (Maddsub_p1_pos_y_share0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<9> (Maddsub_p1_pos_y_share0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<10> (Maddsub_p1_pos_y_share0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<11> (Maddsub_p1_pos_y_share0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<12> (Maddsub_p1_pos_y_share0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<13> (Maddsub_p1_pos_y_share0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<14> (Maddsub_p1_pos_y_share0000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<15> (Maddsub_p1_pos_y_share0000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<16> (Maddsub_p1_pos_y_share0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<17> (Maddsub_p1_pos_y_share0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<18> (Maddsub_p1_pos_y_share0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<19> (Maddsub_p1_pos_y_share0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<20> (Maddsub_p1_pos_y_share0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<21> (Maddsub_p1_pos_y_share0000_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<22> (Maddsub_p1_pos_y_share0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<23> (Maddsub_p1_pos_y_share0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<24> (Maddsub_p1_pos_y_share0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<25> (Maddsub_p1_pos_y_share0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<26> (Maddsub_p1_pos_y_share0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<27> (Maddsub_p1_pos_y_share0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<28> (Maddsub_p1_pos_y_share0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<29> (Maddsub_p1_pos_y_share0000_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Maddsub_p1_pos_y_share0000_cy<30> (Maddsub_p1_pos_y_share0000_cy<30>)
+     XORCY:CI->O           1   0.699   0.426  Maddsub_p1_pos_y_share0000_xor<31> (p1_pos_y_share0000<31>)
+     LUT4:I1->O            1   0.612   0.000  Mmux_p1_pos_y_mux000311 (p1_pos_y_mux0003<0>)
+     FDE:D                     0.268          p1_pos_y_31
+    ----------------------------------------
+    Total                      6.823ns (5.246ns logic, 1.577ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_251'
+  Total number of paths / destination ports: 23946 / 26
+-------------------------------------------------------------------------
+Offset:              11.596ns (Levels of Logic = 36)
+  Source:            v_count_2 (FF)
+  Destination:       Gout<7> (PAD)
+  Source Clock:      clk_251 rising
+
+  Data Path: v_count_2 to Gout<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            16   0.514   1.031  v_count_2 (v_count_2)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_Rout_cmp_ge0008_lut<2> (Mcompar_Rout_cmp_ge0008_lut<2>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_Rout_cmp_ge0008_cy<2> (Mcompar_Rout_cmp_ge0008_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<3> (Mcompar_Rout_cmp_ge0008_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<4> (Mcompar_Rout_cmp_ge0008_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<5> (Mcompar_Rout_cmp_ge0008_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<6> (Mcompar_Rout_cmp_ge0008_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<7> (Mcompar_Rout_cmp_ge0008_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<8> (Mcompar_Rout_cmp_ge0008_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<9> (Mcompar_Rout_cmp_ge0008_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<10> (Mcompar_Rout_cmp_ge0008_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<11> (Mcompar_Rout_cmp_ge0008_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<12> (Mcompar_Rout_cmp_ge0008_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<13> (Mcompar_Rout_cmp_ge0008_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<14> (Mcompar_Rout_cmp_ge0008_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<15> (Mcompar_Rout_cmp_ge0008_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<16> (Mcompar_Rout_cmp_ge0008_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<17> (Mcompar_Rout_cmp_ge0008_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<18> (Mcompar_Rout_cmp_ge0008_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<19> (Mcompar_Rout_cmp_ge0008_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<20> (Mcompar_Rout_cmp_ge0008_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<21> (Mcompar_Rout_cmp_ge0008_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_Rout_cmp_ge0008_cy<22> (Mcompar_Rout_cmp_ge0008_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<23> (Mcompar_Rout_cmp_ge0008_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<24> (Mcompar_Rout_cmp_ge0008_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<25> (Mcompar_Rout_cmp_ge0008_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<26> (Mcompar_Rout_cmp_ge0008_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<27> (Mcompar_Rout_cmp_ge0008_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<28> (Mcompar_Rout_cmp_ge0008_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<29> (Mcompar_Rout_cmp_ge0008_cy<29>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_Rout_cmp_ge0008_cy<30> (Mcompar_Rout_cmp_ge0008_cy<30>)
+     MUXCY:CI->O           1   0.399   0.426  Mcompar_Rout_cmp_ge0008_cy<31> (Rout_cmp_ge0008)
+     LUT4:I1->O            3   0.612   0.481  Rout_and00031 (Rout_and0003)
+     LUT4:I2->O            1   0.612   0.000  Gout<1>173_SW01 (Gout<1>173_SW0)
+     MUXF5:I1->O           1   0.278   0.360  Gout<1>173_SW0_f5 (N25)
+     LUT4:I3->O            8   0.612   0.643  Gout<1>173 (Gout_1_OBUF)
+     OBUF:I->O                 3.169          Gout_7_OBUF (Gout<7>)
+    ----------------------------------------
+    Total                     11.596ns (8.655ns logic, 2.942ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            clk_25 (FF)
+  Destination:       DAC_CLK (PAD)
+  Source Clock:      clk_50 rising
+
+  Data Path: clk_25 to DAC_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.451  clk_25 (clk_251)
+     OBUF:I->O                 3.169          DAC_CLK_OBUF (DAC_CLK)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_phase1'
+  Total number of paths / destination ports: 53904 / 24
+-------------------------------------------------------------------------
+Offset:              13.542ns (Levels of Logic = 35)
+  Source:            ball_y_4 (FF)
+  Destination:       Bout<7> (PAD)
+  Source Clock:      clk_phase1 rising
+
+  Data Path: ball_y_4 to Bout<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             10   0.514   0.902  ball_y_4 (ball_y_4)
+     LUT1:I0->O            1   0.612   0.000  Madd_Rout_add0001_cy<4>_rt (Madd_Rout_add0001_cy<4>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_Rout_add0001_cy<4> (Madd_Rout_add0001_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<5> (Madd_Rout_add0001_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<6> (Madd_Rout_add0001_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<7> (Madd_Rout_add0001_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<8> (Madd_Rout_add0001_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<9> (Madd_Rout_add0001_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<10> (Madd_Rout_add0001_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<11> (Madd_Rout_add0001_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<12> (Madd_Rout_add0001_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<13> (Madd_Rout_add0001_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<14> (Madd_Rout_add0001_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<15> (Madd_Rout_add0001_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<16> (Madd_Rout_add0001_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<17> (Madd_Rout_add0001_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<18> (Madd_Rout_add0001_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<19> (Madd_Rout_add0001_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<20> (Madd_Rout_add0001_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<21> (Madd_Rout_add0001_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<22> (Madd_Rout_add0001_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<23> (Madd_Rout_add0001_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<24> (Madd_Rout_add0001_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<25> (Madd_Rout_add0001_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<26> (Madd_Rout_add0001_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<27> (Madd_Rout_add0001_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<28> (Madd_Rout_add0001_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_Rout_add0001_cy<29> (Madd_Rout_add0001_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Madd_Rout_add0001_cy<30> (Madd_Rout_add0001_cy<30>)
+     XORCY:CI->O           7   0.699   0.671  Madd_Rout_add0001_xor<31> (Rout_add0001<31>)
+     LUT2:I1->O            1   0.612   0.000  Mcompar_Rout_cmp_lt0003_lut<31> (Mcompar_Rout_cmp_lt0003_lut<31>)
+     MUXCY:S->O            1   0.752   0.360  Mcompar_Rout_cmp_lt0003_cy<31> (Mcompar_Rout_cmp_lt0003_cy<31>)
+     LUT4:I3->O            3   0.612   0.603  Rout_and00011 (Rout_and0001)
+     LUT4:I0->O            1   0.612   0.426  Bout<1>_SW0 (N29)
+     LUT4:I1->O            8   0.612   0.643  Bout<1> (Bout_1_OBUF)
+     OBUF:I->O                 3.169          Bout_7_OBUF (Bout<7>)
+    ----------------------------------------
+    Total                     13.542ns (9.937ns logic, 3.605ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.75 secs
+ 
+--> 
+
+
+Total memory usage is 675456 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/student2/jsma/Project2/impact.xsl
+OUTFILE=/home/student2/jsma/Project2/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/student2/jsma/Project2
+LICENSE=iMPACT
+USER_INFO=iMPACT

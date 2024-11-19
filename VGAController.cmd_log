@@ -1,0 +1,323 @@
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+netgen -intstyle ise -ar Structure -tm VGAController -w -dir netgen/synthesis -ofmt vhdl -sim VGAController.ngc VGAController_synthesis.vhd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+netgen -intstyle ise -ar Structure -tm VGAController -w -dir netgen/synthesis -ofmt vhdl -sim VGAController.ngc VGAController_synthesis.vhd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+netgen -intstyle ise -ar Structure -tm VGAController -w -dir netgen/synthesis -ofmt vhdl -sim VGAController.ngc VGAController_synthesis.vhd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+netgen -intstyle ise -ar Structure -tm VGAController -w -dir netgen/synthesis -ofmt vhdl -sim VGAController.ngc VGAController_synthesis.vhd 
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+vhdtdtfi -prj Project2 -o /home/student2/jsma/Project2/VGAController.vhi -module VGAController -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work VGAController.vhd 
+vhdtdtfi -lib work VGAController.vhd -prj Project2 -o VGAController.spl -module VGAController -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VGAController.spl /home/student2/jsma/Project2/VGAController.sym 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf -ucf constraints.ucf 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 
+xst -intstyle ise -ifn "/home/student2/jsma/Project2/VGAController.xst" -ofn "/home/student2/jsma/Project2/VGAController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VGAController.ngc VGAController.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VGAController_map.ncd VGAController.ngd VGAController.pcf 
+par -w -intstyle ise -ol high -t 1 VGAController_map.ncd VGAController.ncd VGAController.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VGAController.twx VGAController.ncd -o VGAController.twr VGAController.pcf 
+bitgen -intstyle ise -f VGAController.ut VGAController.ncd 

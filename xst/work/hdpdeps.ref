@@ -1,0 +1,8 @@
+V3 3
+FL /home/student2/jsma/Project2/VGAController.vhd 2024/11/18.22:41:30 O.87xd
+EN work/VGAController 1731987698 \
+      FL /home/student2/jsma/Project2/VGAController.vhd PB ieee/std_logic_1164 1325952872 \
+      PB ieee/std_logic_arith 1325952873 PB ieee/STD_LOGIC_UNSIGNED 1325952875 \
+      PB ieee/NUMERIC_STD 1325952877
+AR work/VGAController/Behavioral 1731987699 \
+      FL /home/student2/jsma/Project2/VGAController.vhd EN work/VGAController 1731987698
